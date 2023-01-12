@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body {  
+    position: relative;
+    height: 98.2rem;
+
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.hide {
+    display: none;
+} 
+
+main {
+    background: #FFFFFF;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+    
+    padding: 4.8rem 8.4rem;
+    
+    width: min(42.8rem, 90%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}    
+
+
+img {
+    width: 80%;
+    height: 20rem;
+} 
+
+
+/*Screen1*/
+
+.screen1 h1 {
+    width: 25.8rem;
+    
+    padding-bottom: 1.4rem;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;    
+    
+    color: #34355B;
+}    
+
+.screen1 p {
+    padding-bottom: 2rem;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    
+    color: #34355B;
+}    
+
+.screen1 button {
+    width: 26.4rem;
+    height: 20rem; 
+    cursor: pointer;
+    border: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen1 button img:hover {
+    animation: tremer .10s;
+    animation-iteration-count: 4;
+}
+
+/*Screen2*/
+
+.screen2 h1{
+    width: 29.7rem;
+    height: 5.8rem;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;    
+    
+    color: #34355B;
+} 
+
+.screen2 p {
+    margin-top: 1.7rem;
+    margin-bottom: 2.7rem;
+    padding: 10px;
+    
+    
+    width: 29rem;
+    height: 100%;
+    
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    
+    animation: verse 2s;
+
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    
+    color: #000000;
+}
+
+.screen2 button {
+    padding: 1.6rem;
+    gap: 10px;
+
+    width: 17.4rem;
+    height: 5.2rem;
+
+    background: #FF9500;
+    border-radius: 4px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+
+    text-align: center;
+    
+    cursor: pointer;
+    border: none;
+    
+    color: #FFFFFF;
+}
+
+@keyframes verse {
+    0% {
+        opacity: 0;
+        transform: translateY(15rem);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+}
+
+@keyframes tremer {
+    0% {margin-top: 0;}
+    25% {margin-top: 1rem;}
+    50% {margin-top: 0;}
+    75% {margin-top: -1rem;}
+    100% {margin-top: 0;}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
